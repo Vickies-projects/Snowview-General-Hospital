@@ -4,7 +4,7 @@
 
 ## 🌐 Live Website
 
-👉 [View the Live Site Here](https://your-live-link.com)  
+👉 [View the Live Site Here](https://vickies-projects.github.io/Snowview-General-Hospital/landing.html)  
 <!-- Replace with your actual deployed site link (e.g., GitHub Pages, Netlify, Vercel) -->
 
 ## 📸 Features
