@@ -38,10 +38,6 @@
 │ └── ...
 ├── script.js (inline in HTML)
 
-markdown
-Copy
-Edit
-
 ## ✨ Designed By
 
 **Victor Waweru**
