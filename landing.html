@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowview Hospital</title>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header class="snowview-header">
+        <img src="logo.png" alt="This Snowviews Hospital Logo">
+        <h1>Snowview Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#branches">Branches</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <button class="submit">Patients login</button>
+    </header>
+    <section>
+        <div class="landing-content">
+        <div class="left-section">
+        <h2>Trusted by many, <span>committed to your health.</span></h2>
+        <button onclick="window.location.href='appointment.html'">📞 Call For Appointment</button>
+        <button onclick="window.location.href='branches.html'">🏥 Find Brances Near You</button>
+        </div>
+        <div class="view-section"><img src="patient-care.jpg" alt="A picture of nurses taking care of  a patient in our facilities"></div>
+        </div>
+        <div class="search-input" id="search">
+            <label for="doctor">Doctor 🔽</label>
+            <select name="doctor" id="doctor">
+                <option value="doctor" default>Cardiologist</option>
+                <option value="doctor">Dermatologist</option>
+                <option value="doctor">Pediatrician</option>
+                <option value="doctor">Neurologist</option>
+                <option value="doctor">Gynecologist</option>
+                <option value="doctor">Endocrinologist</option>
+                <option value="doctor">Gastroenterologist</option>
+                <option value="doctor">Psychiatrist</option>
+            </select>
+            <label for="location">Location 🔽</label>
+            <select name="location" id="location">
+                 <option value="town" default>Nairobi</option>
+                 <option value="town">Chuka</option>
+                 <option value="town">Kerugoya</option>
+                 <option value="town">Thika</option>
+                 <option value="town">Embu</option>
+                 <option value="town">Eldoret</option>
+                 <option value="-town">Karatina</option>
+                 <option value="town">Nanyuki</option>
+            </select>
+            <label for="date">Date 📅</label>
+            <input  value="date" id="date" type="date" name="date">
+            <button type="submit">Find Doctors</button>
+        </div>
+    </section>
+    <section class="appointment" id="appointment">
+        <img src="notepad.jpg" alt="A notebook representing the appointment booking process" class="notepad">
+        <form action="">
+            <h2>Book an Appointment</h2>
+            <p>Schedule your visit with our trusted medical team at a time that works best for you</p>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="Eg: John Doe">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" placeholder="Ex: example@gmail.com">
+            <label for="message">Please describe your symptoms in detail:</label>
+            <textarea name="message" id="message" cols="10" rows="5" placeholder="I have been noticing symptoms like..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="departments-carousel" id="departments">
+       <button class="scroll-btn left" onclick="scrollGallery(-1)">←</button>
+       <div class="departments-track">
+        <div class="department-card">
+            <img src="Cardiology.jpeg" alt="The Cardiology department provides diagnosis and treatment for heart and cardiovascular diseases.">
+            <p>Our cardiologists provide advanced heart care with personalized treatment plans to keep your heart healthy and strong.</p>
+        </div>
+        <div class="department-card">
+            <img src="Dermatology.jpeg" alt="The Dermatology department offers care for skin, hair, and nail conditions.">
+            <p>Expert skin specialists help you achieve healthy, glowing skin and treat all skin conditions with the latest therapies.</p>
+        </div>
+        <div class="department-card">
+            <img src="Pediatrics.jpeg" alt="The Pediatrics department focuses on medical care for infants, children, and adolescents.">
+            <p>Caring for your child’s health from infancy through adolescence with compassionate, family-centered care.</p>
+        </div>
+        <div class="department-card">
+            <img src="Neurology.jpeg" alt="The Neurology department diagnoses and treats brain, nerve, and muscle disorders.">
+            <p>Specialized care for nervous system disorders using cutting-edge diagnostics to improve your quality of life.</p>
+        </div>
+        <div class="department-card">
+            <img src="Gynecology.jpeg" alt="The Gynecology department specializes in women’s reproductive health and wellness.">
+            <p>Comprehensive women’s health services focusing on prevention, treatment, and wellness at every stage of life.</p>
+        </div>
+        <div class="department-card">
+            <img src="Endocrinology.jpeg" alt="The Endocrinology department manages hormone disorders like diabetes and thyroid issues.">
+            <p>Expert management of hormone-related conditions, helping you maintain balance and vitality.</p>
+        </div>
+        <div class="department-card">
+            <img src="Gastroenterology.jpeg" alt="The Gastroenterology department treats diseases of the digestive system and liver.">
+            <p>Expert management of hormone-related conditions, helping you maintain balance and vitality.</p>
+        </div>
+        <div class="department-card">
+            <img src="Psychiatry.jpeg" alt="The Psychiatry department provides mental health diagnosis and treatment.">
+            <p>Confidential and supportive mental health care tailored to your individual needs for lasting well-being.</p>
+        </div>
+        <button class="scroll-btn right" onclick="scrollGallery(1)">→</button>
+    </section>
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonial-card">
+            <img src="aisha.jpeg" alt="An image of Aisha M,a satisfied patient">
+            <p>The doctors here truly care. From the moment I walked in, I felt listened to and supported. I’m so grateful for the excellent care I received.</p>
+            <h4>Aisha M</h4>
+        </div>
+        <div class="testimonial-card featured">
+            <img src="samuel.jpeg" alt="An image of Samuel K,a satisfied patient">
+            <p>The doctors here truly care. From the moment I walked in, I felt listened to and supported. I’m so grateful for the excellent care I received</p>
+            <h4>Samuel K</h4>
+        </div>
+        <div class="testimonial-card">
+            <img src="lina.jpeg" alt="An image of Lina D,a satisfied patient">
+            <p>I brought my daughter in for a check-up and was so impressed with how gentle and kind the pediatrician was. We’ll definitely be coming back!</p>
+            <h4>Lina D</h4>
+        </div>
+    </section>
+    <footer>
+        <article>
+            <a href="#search">Get a Doctor</a>
+            <a href="#appointment">Book an Appointment</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#departments">Departments</a>
+        </article>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://wa.me/254769864327?text=Hello%2C%20I%20am%20reaching%20to%20know%20more%20about%20your%20services"><i class="bxl bx-whatsapp"></i><span class="sr-only">WhatsApp</span></a></li>
+                <li><a href="https://www.facebook.com/victor.waweru.70831"><i class='bxl  bx-facebook'></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://x.com/victorwawe4441?t=5RV8kuQ7UpQRe22TWjOdIQ&s=08"><i class='bxl  bx-twitter-x'></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/v.wawz?igsh=OXd0ODI1Ymp4ZHJn"><i class='bxl  bx-instagram-alt'></i><span class="sr-only">Instagram</span></a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 Designed by Victor</p>
+    </footer>
+    <script>
+        function scrollGallery(direction) {
+            const track = document.querySelector('.departments-track');
+            const scrollAmount = 300;
+            track.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.querySelector('.snowview-header nav');
+
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('show');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const leftBtn = document.querySelector('.scroll-btn.left');
+            const rightBtn = document.querySelector('.scroll-btn.right');
+
+            if (leftBtn && rightBtn) {
+                leftBtn.addEventListener('click', () => scrollGallery(-1));
+                rightBtn.addEventListener('click', () => scrollGallery(1));
+            }
+
+            const form = document.querySelector('.appointment form');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault(); 
+
+                    const name = document.getElementById('full-name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !message) {
+                        alert('Please fill in all fields.');
+                        return;
+                    }
+
+                    alert('Appointment request submitted successfully!');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
