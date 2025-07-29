@@ -42,15 +42,6 @@ markdown
 Copy
 Edit
 
-## 📦 Setup Instructions
-
-1. Clone this repo  
-   `git clone https://github.com/your-username/snowview-hospital.git`
-
-2. Open `index.html` in your browser or host with GitHub Pages/Vercel/Netlify
-
----
-
 ## ✨ Designed By
 
 **Victor Waweru**
